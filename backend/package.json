@@ -16,13 +16,14 @@
   "description": "",
   "dependencies": {
     "@prisma/adapter-pg": "^7.1.0",
-    "@prisma/client": "^7.1.0",
+    "@prisma/client": "^6.19.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "helmet": "^8.1.0",
     "morgan": "^1.10.1",
-    "pg": "^8.16.3"
+    "pg": "^8.16.3",
+    "prisma": "^6.19.2"
   },
   "devDependencies": {
     "@prisma/config": "^7.3.0",
@@ -31,7 +32,6 @@
     "@types/morgan": "^1.9.10",
     "@types/node": "^24.10.1",
     "nodemon": "^3.1.11",
-    "prisma": "^7.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
