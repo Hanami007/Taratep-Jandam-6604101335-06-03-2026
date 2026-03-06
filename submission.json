@@ -1,0 +1,11 @@
+{
+  "student_id": "6604101335",
+  "name": "ธราเทพ จันทร์ดำ",
+  "github_repo": "https://github.com/Hanami007/Taratep-Jandam-6604101335-06-03-2026.git",
+  "backend_base_url": "https://your-render-app.onrender.com",
+  "frontend_url": "https://your-netlify-site.netlify.app",
+  "api": {
+    "health": "https://your-render-app.onrender.com/api/health",
+    "tasks": "https://your-render-app.onrender.com/api/tasks"
+  }
+}
