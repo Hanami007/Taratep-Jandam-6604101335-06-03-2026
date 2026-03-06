@@ -14,8 +14,17 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
-app.use(helmet());
+// ✅ CORS configuration - allow all origins dynamically
+app.use(cors({
+  origin: true, // Allow all origins
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+}));
+
+app.use(helmet({
+  crossOriginResourcePolicy: false, // Allow cross-origin resources
+}));
 app.use(morgan('dev'));
 app.use(express.json());
 
@@ -48,6 +57,15 @@ app.get('/api/demo', (req, res) => {
 app.get('/', (_req, res) => {
   res.json({
     message: 'API พร้อมใช้งาน (Supabase + Prisma + Quasar Frontend)',
+    timestamp: new Date().toISOString(),
+  });
+});
+
+// ✅ Health check endpoint (ตามที่ exam ต้องการ)
+app.get('/api/health', (_req, res) => {
+  res.json({
+    ok: true,
+    message: 'Backend is running',
     timestamp: new Date().toISOString(),
   });
 });
