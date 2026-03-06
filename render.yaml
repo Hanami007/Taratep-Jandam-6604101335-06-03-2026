@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: Taratep-Jandam-6604101335-06-03-2026-1
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install && npx prisma generate && npm run build
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        # This will be set in the Render dashboard, not in this file
