@@ -3,7 +3,7 @@
   "name": "ธราเทพ จันทร์ดำ",
   "github_repo": "https://github.com/Hanami007/Taratep-Jandam-6604101335-06-03-2026.git",
   "backend_base_url": "https://taratep-jandam-6604101335-06-03-2026-1.onrender.com",
-  "frontend_url": "https://your-netlify-site.netlify.app",
+  "frontend_url": "https://69aa7b51e001f037387d8071--flnd.netlify.app/#/",
   "api": {
     "health": "https://taratep-jandam-6604101335-06-03-2026-1.onrender.com/api/health",
     "tasks": "https://taratep-jandam-6604101335-06-03-2026-1.onrender.com/api/tasks"
